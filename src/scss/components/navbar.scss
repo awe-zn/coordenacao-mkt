@@ -1,0 +1,16 @@
+.nav-item-header {
+  border-bottom: 1px solid transparent;
+  &:hover {
+    border-bottom: 1px solid $primary-light;
+  }
+
+  &.active {
+    border-bottom: 1px solid $primary-light;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .nav-item-header {
+    border-bottom: 1px solid $primary-light;
+  }
+}

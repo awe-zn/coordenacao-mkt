@@ -1,0 +1,94 @@
+$primary-darker: #aa1200;
+$primary-dark: #d43a10;
+$primary-base: #fe5a14;
+$primary-light: #ff9445;
+$primary-lighter: #ffba63;
+$primary-ml-lighter: #ffe9cd;
+$dark-1: #070708;
+$dark-2: #1d1e24;
+$dark-3: #47494d;
+$grey-1: #727376;
+$grey-2: #9c9e9f;
+$grey-3: #c6c8c8;
+
+$theme-colors: (
+  'primary-darker': $primary-darker,
+  'primary-dark': $primary-dark,
+  'primary-base': $primary-base,
+  'primary-light': $primary-light,
+  'primary-lighter': $primary-lighter,
+  'primary-ml-lighter': $primary-ml-lighter,
+  'dark-1': $dark-1,
+  'dark-2': $dark-2,
+  'dark-3': $dark-3,
+  'grey-1': $grey-1,
+  'grey-2': $grey-2,
+  'grey-3': $grey-3,
+  'transparent': #fff0,
+) !default;
+
+// spacers variable definition
+$spacer: 1rem;
+$spacers: (
+  '0': 0,
+  '6': $spacer * 0.375,
+  '12': $spacer * 0.75,
+  '24': $spacer * 1.5,
+  '32': $spacer * 2,
+  '40': $spacer * 2.5,
+  '56': $spacer * 3.5,
+  '64': $spacer * 4,
+  '80': $spacer * 5,
+  '96': $spacer * 6,
+  '108': $spacer * 8,
+  '324': $spacer * 24,
+) !default;
+$enable-negative-margins: true;
+
+$awe-position-values: (
+  16: 16px,
+);
+
+// font features variables definition
+$font-family-sans-serif: 'Mulish', 'Roboto', sans-serif;
+$font-sizes: (
+  10: 10px,
+  12: 12px,
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  20: 20px,
+  24: 24px,
+  32: 32px,
+  40: 40px,
+  72: 72px,
+);
+$font-families: (
+  mulish: 'Mulish',
+  roboto: 'Roboto',
+);
+
+//Variáveis do font withg
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+// Variáveis do line height
+$line-height-140: 140%;
+$line-height-160: 160%;
+$line-height-180: 180%;
+
+// variáveis do menu
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+$navbar-toggler-font-size: 0;
+$navbar-toggler-border-radius: 0;
+$navbar-toggler-focus-width: 0;
+$navbar-toggler-transition: none;
+$navbar-dark-toggler-border-color: #fff0;
