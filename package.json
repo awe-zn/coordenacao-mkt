@@ -1,0 +1,24 @@
+{
+  "name": "coordenacao-mkt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch src/scss/style.scss:dist/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awe-zn/coordenacao-mkt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awe-zn/coordenacao-mkt/issues"
+  },
+  "homepage": "https://github.com/awe-zn/coordenacao-mkt#readme",
+  "devDependencies": {
+    "bootstrap": "^5.2.3",
+    "sass": "^1.57.1"
+  }
+}
