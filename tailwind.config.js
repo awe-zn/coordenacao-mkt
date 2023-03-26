@@ -14,6 +14,7 @@ module.exports = {
         dark: {
           1: '#070708',
           2: '#1D1E24',
+          3: '#47494D',
           5: '#9C9E9F',
         },
         fumaca: {
@@ -23,6 +24,10 @@ module.exports = {
           base: '#F9FAFC',
           dark: '#EFF2F7',
         },
+      },
+      fontSize: {
+        '3.5xl': '2rem',
+        '4.5xl': '2.5rem',
       },
       container: {
         center: true,
