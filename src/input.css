@@ -2,8 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '/dist/owl.carousel.min.css';
+@import '/dist/owl.theme.default.min.css';
+
 :root,
 body,
 * {
   font-family: 'Work Sans', sans-serif;
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(
+      180deg,
+      rgba(245, 245, 247, 0.64) 0%,
+      rgba(255, 245, 243, 0.64) 100%
+    ),
+    #ffffff;
+}
+
+#projetos_slider_dots {
+  @apply flex justify-center gap-4;
+}
+
+#projetos_slider_dots .owl-dot {
+  @apply w-4 h-4 bg-dark-2 rounded-full;
+}
+
+#projetos_slider_dots .owl-dot.active {
+  @apply bg-primary-base;
 }
