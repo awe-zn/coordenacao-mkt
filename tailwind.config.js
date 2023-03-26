@@ -27,7 +27,14 @@ module.exports = {
       },
       fontSize: {
         '3.5xl': '2rem',
-        '4.5xl': '2.5rem',
+        '4.5xl': [
+          '2.5rem',
+          {
+            lineHeight: '2.938rem',
+            letterSpacing: '-0.02em',
+            fontWeight: '700',
+          },
+        ],
       },
       container: {
         center: true,
