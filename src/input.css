@@ -31,3 +31,15 @@ body,
 #projetos_slider_dots .owl-dot.active {
   @apply bg-primary-base;
 }
+
+#testimonials_slider_dots {
+  @apply flex justify-center gap-4;
+}
+
+#testimonials_slider_dots .owl-dot {
+  @apply w-4 h-4 bg-neve-dark rounded-full;
+}
+
+#testimonials_slider_dots .owl-dot.active {
+  @apply bg-primary-base;
+}
