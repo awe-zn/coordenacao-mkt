@@ -15,6 +15,7 @@ module.exports = {
           1: '#070708',
           2: '#1D1E24',
           3: '#47494D',
+          4: '#727376',
           5: '#9C9E9F',
         },
         fumaca: {
@@ -39,6 +40,9 @@ module.exports = {
       container: {
         center: true,
         padding: '1.5rem',
+      },
+      boxShadow: {
+        input: '3px 4px 10px rgba(255, 97, 28, 0.24)',
       },
     },
   },
