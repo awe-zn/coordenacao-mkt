@@ -710,6 +710,10 @@ video {
   flex-direction: column;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -828,6 +832,11 @@ video {
   border-top-width: 1px;
 }
 
+.border-neve-base {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 250 252 / var(--tw-border-opacity));
+}
+
 .border-neve-dark {
   --tw-border-opacity: 1;
   border-color: rgb(239 242 247 / var(--tw-border-opacity));
@@ -841,16 +850,6 @@ video {
 .border-primary-light {
   --tw-border-opacity: 1;
   border-color: rgb(255 148 69 / var(--tw-border-opacity));
-}
-
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-neve-base {
-  --tw-border-opacity: 1;
-  border-color: rgb(249 250 252 / var(--tw-border-opacity));
 }
 
 .border-b-primary-base {
@@ -1233,21 +1232,10 @@ body,
   outline-color: #FF611C;
 }
 
-.focus\:shadow:focus {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .focus\:shadow-input:focus {
   --tw-shadow: 3px 4px 10px rgba(255, 97, 28, 0.24);
   --tw-shadow-colored: 3px 4px 10px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.focus\:shadow-primary-extra-light:focus {
-  --tw-shadow-color: #FF611C;
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .focus\:outline-none:focus {
@@ -1330,14 +1318,6 @@ body,
 }
 
 @media (min-width: 768px) {
-  .md\:col-span-4 {
-    grid-column: span 4 / span 4;
-  }
-
-  .md\:col-span-5 {
-    grid-column: span 5 / span 5;
-  }
-
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1355,12 +1335,16 @@ body,
     margin-bottom: 4rem;
   }
 
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .md\:block {
     display: block;
   }
 
-  .md\:flex {
-    display: flex;
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-\[428px\] {
@@ -1371,12 +1355,12 @@ body,
     max-height: 176px;
   }
 
-  .md\:grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:gap-6 {
@@ -1385,10 +1369,6 @@ body,
 
   .md\:gap-8 {
     gap: 2rem;
-  }
-
-  .md\:gap-4 {
-    gap: 1rem;
   }
 
   .md\:space-y-12 > :not([hidden]) ~ :not([hidden]) {
@@ -1455,6 +1435,10 @@ body,
     grid-column: span 3 / span 3;
   }
 
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
   .lg\:col-span-5 {
     grid-column: span 5 / span 5;
   }
@@ -1467,36 +1451,24 @@ body,
     grid-column: span 7 / span 7;
   }
 
-  .lg\:col-span-4 {
-    grid-column: span 4 / span 4;
-  }
-
-  .lg\:col-start-4 {
-    grid-column-start: 4;
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .lg\:col-start-5 {
     grid-column-start: 5;
   }
 
-  .lg\:col-start-6 {
-    grid-column-start: 6;
+  .lg\:mb-14 {
+    margin-bottom: 3.5rem;
   }
 
-  .lg\:col-start-8 {
-    grid-column-start: 8;
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
-  .lg\:col-start-9 {
-    grid-column-start: 9;
-  }
-
-  .lg\:col-start-10 {
-    grid-column-start: 10;
-  }
-
-  .lg\:col-start-7 {
-    grid-column-start: 7;
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .lg\:block {
@@ -1598,14 +1570,6 @@ body,
 }
 
 @media (min-width: 1280px) {
-  .xl\:col-span-5 {
-    grid-column: span 5 / span 5;
-  }
-
-  .xl\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-
   .xl\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -1614,8 +1578,16 @@ body,
     grid-column: span 4 / span 4;
   }
 
-  .xl\:col-start-8 {
-    grid-column-start: 8;
+  .xl\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .xl\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .xl\:col-span-1 {
+    grid-column: span 1 / span 1;
   }
 
   .xl\:col-start-10 {
@@ -1624,6 +1596,18 @@ body,
 
   .xl\:col-start-7 {
     grid-column-start: 7;
+  }
+
+  .xl\:col-start-8 {
+    grid-column-start: 8;
+  }
+
+  .xl\:col-start-6 {
+    grid-column-start: 6;
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:gap-0 {
