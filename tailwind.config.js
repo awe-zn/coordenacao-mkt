@@ -43,6 +43,11 @@ module.exports = {
       },
       boxShadow: {
         input: '3px 4px 10px rgba(255, 97, 28, 0.24)',
+        'card-1': '5px 4px 12px rgba(7, 7, 8, 0.08)',
+        'card-2': '5px 4px 12px rgba(255, 97, 28, 0.15)',
+      },
+      margin: {
+        18: '4.5rem',
       },
     },
   },

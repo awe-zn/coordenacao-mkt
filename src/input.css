@@ -20,6 +20,23 @@ body,
     #ffffff;
 }
 
+.bg-primary-gradient-2 {
+  background: linear-gradient(
+      0deg,
+      rgba(212, 58, 16, 0.005),
+      rgba(212, 58, 16, 0.005)
+    ),
+    #ffffff;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 #projetos_slider_dots {
   @apply flex justify-center gap-4;
 }

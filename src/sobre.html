@@ -1,10 +1,11 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>O curso - Coordenação de marketing</title>
+  <title>Página inicial - Coordenação de marketing</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,10 +13,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Css -->
+  <link href="/dist/owl.carousel.min.css" rel="stylesheet">
+  <link href="/dist/owl.theme.default.min.css" rel="stylesheet">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="">
   <header class="bg-dark-1 z-40 sticky top-0">
     <div class="container py-4 flex items-center justify-between">
       <div>
@@ -80,8 +83,252 @@
       </nav>
     </div>
   </header>
-</body>
 
-<script type="module" src="/dist/js/index.js"></script>
+  <!-- Breadcrumb -->
+  <div class="mt-14 lg:mt-28">
+    <div class="container">
+      <nav>
+        <ol class="flex gap-4 items-center">
+          <li class="group">
+            <a href="/src/index.html" class="text-dark-1 text-sm pb-[4px] border-b-[2px] border-transparent group-[.isActive]:border-primary-dark hover:text-primary-dark transition">
+              Inicial
+            </a>
+          </li>
+          <img src="/dist/images/svg/breadcrum-divider.svg" alt="">
+          <li class="group isActive" aria-current="page">
+            <a href="/src/sobre.html" class="text-dark-1 text-sm pb-[4px] border-b-[2px] border-transparent group-[.isActive]:border-primary-dark hover:text-primary-dark transition">
+              O Curso
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Seção principal - Sobre o curso -->
+  <main class="bg-white mt-14 lg:mt-16">
+    <div class="container grid grid-cols-1 lg:grid-cols-12">
+
+      <!-- Sobre o curso -->
+      <div class="lg:col-span-10 lg:col-start-2 mb-18 lg:mb-28">
+        <div class="flex flex-col justify-center lg:text-center mb-18 lg:mb-28">
+          <h1 class="text-3.5xl text-dark-2 font-bold">
+            Curso superior de tecnologia em Marketing
+          </h1>
+          <p class="text-2xl text-primary-base font-semibold">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="space-y-14 lg:space-y-16">
+          <div>
+            <h3 class="text-2xl text-dark-2 font-semibold mb-4">
+              Sobre o curso
+            </h3>
+            <p class="text-base text-dark-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis risus ex. Vestibulum metus leo, vulputate dignissim suscipit sit amet, luctus ut leo. Cras convallis elementum libero nec tincidunt. Aenean volutpat id nibh vel laoreet. Sed sed nisl eget ipsum venenatis gravida eu sit amet urna. Nulla ultricies tellus ac tellus commodo, eu mattis justo tincidunt. Nullam eu dolor non tellus vehicula dignissim.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl text-dark-2 font-semibold mb-4">
+              Duração e carga horária do curso
+            </h3>
+            <p class="text-base text-dark-2">
+              3 anos / 2.074 horas
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl text-dark-2 font-semibold mb-4">
+              Saiba mais em
+            </h3>
+            <div class="group">
+              <a href="https://portal.ifrn.edu.br/campus/natalzonanorte/cursos/curso-superior-de-tecnologia-em-marketing-1" target="_blank" class="text-base text-dark-2 break-all group-hover:underline">
+                https://portal.ifrn.edu.br/campus/natalzonanorte/cursos/curso-superior-de-tecnologia-em-marketing-1
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divisor de seções -->
+      <div class="lg:col-span-10 lg:col-start-2 h-[2px] bg-primary-base hidden lg:block"></div>
+    </div>
+  </main>
+
+  <!-- Seção - Professores -->
+  <section class="my-14 lg:my-28">
+    <div class="container grid grid-cols-1 lg:grid-cols-12">
+      <div class="mb-18 lg:mb-28 lg:col-span-6">
+        <div class="pb-4 mb-4 border-b-[4px] border-primary-base inline-block">
+          <h2 class="text-2xl lg:text-3.5xl text-dark-2 font-bold">
+            Professores
+          </h2>
+        </div>
+        <p class="text-base text-dark-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec justo iaculis, lobortis neque in, tincidunt augue.
+        </p>
+      </div>
+
+      <!-- Professores - Grid -->
+      <div class="lg:col-span-12 grid lg:grid-cols-12">
+
+        <!-- Professor 1 -->
+        <div>
+          <!-- Professor 1 - card/botão -->
+          <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-[198px] bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+            <div class="w-28 h-28 overflow-hidden rounded-full mx-auto mb-4">
+              <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+            </div>
+            <p class="text-dark-1 text-base font-bold">
+              Nome Sobrenome
+            </p>
+            <p class="text-sm break-all">
+              loremipsum@email.com
+            </p>
+          </button>
+
+          <!-- Professor 1 - modal (o javascript gerencia a presença classe 'hidden') -->
+          <div id="modal-professor-001" data-modal-item="modal" class="hidden flex items-center justify-center fixed top-0 left-0 w-screen h-screen bg-dark-2 bg-opacity-20 z-50">
+            <div class="w-full max-w-[910px] bg-white p-6 px-6 lg:px-8 lg:pb-14">
+
+              <!-- Modal do professor - Header -->
+              <div class="flex justify-end lg:pb-4 lg:border-b-[2px] border-fumaca-dark">
+                <button data-modal-id="modal-professor-001" data-modal-action="close" data-modal-item="button" class="rounded-full hover:bg-gray-200 hover:ring-4 hover:ring-gray-200 transition">
+                  <img src="/dist/images/svg/close.svg" alt="">
+                </button>
+              </div>
+
+              <!-- Modal do professor - Body -->
+              <div class="grid grid-cols-1 lg:grid-cols-12">
+                <div class="flex justify-center sm:justify-start lg:block lg:col-span-4 py-8 lg:pb-14 lg:pr-10 border-b-[2px] lg:border-b-0 lg:border-r-[2px] border-fumaca-dark">
+                  <div class="hidden sm:block w-28 lg:w-40 h-28 lg:h-40 overflow-hidden rounded-full mr-8 lg:mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <div>
+                    <div class="mb-8 lg:mb-12 text-center sm:text-start lg:text-center">
+                      <p class="text-dark-1 text-base font-bold">
+                        Nome Sobrenome
+                      </p>
+                      <p class="text-sm break-all">
+                        loremipsum@email.com
+                      </p>
+                    </div>
+                    <div class="flex justify-center sm:justify-start lg:justify-center">
+                      <div class="bg-primary-light bg-opacity-30 inline-block px-6 py-[4px]">
+                        <a href="" class="text-base text-black font-normal hover:underline">
+                          Lattes
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:col-span-8 pt-8 lg:pl-10 md:grid md:grid-cols-2 gap-8 lg:block">
+                  <div class="mb-10">
+                    <div class="bg-primary-light bg-opacity-30 inline-block px-2 py-[4px] mb-4">
+                      <p class="text-base text-black font-bold">
+                        Formação Profissional
+                      </p>
+                    </div>
+                    <p class="text-dark-2 text-base font-normal">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec justo iaculis, lobortis neque in, tincidunt augue. Pellentesque orci tortor, porta eu eros eu, aliquet porta nibh. Sed in velit enim. Ut vehicula et erat quis scelerisque. Vestibulum viverra elit.
+                    </p>
+                  </div>
+                  <div class="hidden md:block">
+                    <div class="bg-primary-light bg-opacity-30 inline-block px-2 py-[4px] mb-4">
+                      <p class="text-base text-black font-bold">
+                        Áreas de interesse
+                      </p>
+                    </div>
+                    <ul class="list-disc pl-4 text-dark-2 text-base font-normal">
+                      <li>
+                        Modelagem de Sistemas Biológicos
+                      </li>
+                      <li>
+                        Análise de Dados em Saúde
+                      </li>
+                      <li>
+                        Genômica
+                      </li>
+                      <li>
+                        Metagenômica
+                      </li>
+                      <li>
+                        Genética molecular humana
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="bg-dark-1 py-14 md:py-20">
+      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 md:gap-8">
+        <div class="hidden lg:flex lg:col-span-3 xl:col-span-4 items-center justify-center">
+          <a href="/src/index.html">
+            <img src="/dist/images/logo-lg.png" alt="">
+          </a>
+        </div>
+
+        <!-- Rodapé - Contato -->
+        <div class="space-y-8 lg:col-span-4 xl:col-span-3 lg:col-start-5 xl:col-start-6">
+          <p class="text-primary-light text-2xl font-semibold">
+            Contato
+          </p>
+          <ul class="text-white space-y-4">
+            <li class="">
+              <a href="tel:+5584900000000" class="flex gap-4 hover:underline" target="_blank">
+                <img src="/dist/images/svg/phone.svg" alt="">
+                (84) 90000-0000
+              </a>
+            </li>
+            <li class="">
+              <a href="mailto:loremipsum@gmail.com" class="flex gap-4 hover:underline" target="_blank">
+                <img src="/dist/images/svg/mail.svg" alt="">
+                loremipsum@gmail.com
+              </a>
+            </li>
+            <li class="">
+              <a href="https://goo.gl/maps/aK7qmVfa6KpPe3R86" class="flex gap-4 hover:underline" target="_blank">
+                <img src="/dist/images/svg/location.svg" alt="">
+                R. Brusque, 2926 - Potengi
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Rodapé -  Fique atento -->
+        <div class="space-y-8 lg:col-span-4 xl:col-span-3 xl:col-start-10">
+          <p class="text-primary-light text-2xl font-semibold">
+            Fique atento
+          </p>
+          <div class="space-y-6">
+            <p class="text-white text-base font-normal">
+              Lorem ipsum dolor sit amet adipiscing elit aliquam mauris sed ma
+            </p>
+            <form action="" class="space-y-4">
+              <input type="email" required placeholder="Digite seu E-mail" class="block w-full bg-neve-base rounded px-4 py-2 text-base placeholder:text-dark-4 text-black transition-all focus:outline-none hover:outline hover:outline-[2px] hover:outline-offset-0 hover:outline-primary-extra-light focus:outline focus:outline-[2px] focus:outline-offset-0 focus:outline-primary-base focus:shadow-input">
+              <input type="submit" value="Enviar" class="block text-center py-2 px-8 bg-transparent hover:bg-primary-light hover:bg-opacity-10 border border-primary-light rounded text-white font-semibold text-base transition cursor-pointer">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center bg-dark-1 border-t border-neve-base py-4">
+      <a href="https://agenciaweb.ifrn.edu.br/" target="_blank" title="Agência Web Escolar" class="block">
+        <img src="/dist/images/svg/awe-logo.svg" alt="Logo da agência web escolar">
+      </a>
+    </div>
+  </footer>
+
+  <script type="module" src="/dist/js/index.js"></script>
+
+</body>
 
 </html>
