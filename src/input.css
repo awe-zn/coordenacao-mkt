@@ -37,6 +37,26 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+.slider-bullet .swiper-pagination-hidden {
+  @apply hidden;
+}
+
+.swiper-pagination-bullets {
+  @apply flex gap-4 justify-center mt-10;
+}
+
+.swiper-pagination-bullet {
+  @apply block w-4 h-4 bg-neve-dark rounded-full opacity-100;
+}
+
+.slider-bullets-dark .swiper-pagination-bullet {
+  @apply bg-dark-2;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply bg-primary-base;
+}
+
 #projetos_slider_dots {
   @apply flex justify-center gap-4;
 }

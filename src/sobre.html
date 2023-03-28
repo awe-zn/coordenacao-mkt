@@ -13,8 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Css -->
-  <link href="/dist/owl.carousel.min.css" rel="stylesheet">
-  <link href="/dist/owl.theme.default.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 
@@ -168,100 +167,300 @@
         </p>
       </div>
 
-      <!-- Professores - Grid -->
-      <div class="lg:col-span-12 grid lg:grid-cols-12">
+      <div class="lg:col-span-12 2xl:grid 2xl:grid-cols-12">
+        <div class="2xl:col-span-10 2xl:col-start-2">
+          <div id="professores_slider" class="swiper mySwiper w-full">
+            <div class="swiper-wrapper min-[1024px]:justify-center">
 
-        <!-- Professor 1 -->
-        <div>
-          <!-- Professor 1 - card/botão -->
-          <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-[198px] bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
-            <div class="w-28 h-28 overflow-hidden rounded-full mx-auto mb-4">
-              <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
-            </div>
-            <p class="text-dark-1 text-base font-bold">
-              Nome Sobrenome
-            </p>
-            <p class="text-sm break-all">
-              loremipsum@email.com
-            </p>
-          </button>
-
-          <!-- Professor 1 - modal (o javascript gerencia a presença classe 'hidden') -->
-          <div id="modal-professor-001" data-modal-item="modal" class="hidden flex items-center justify-center fixed top-0 left-0 w-screen h-screen bg-dark-2 bg-opacity-20 z-50">
-            <div class="w-full max-w-[910px] bg-white p-6 px-6 lg:px-8 lg:pb-14">
-
-              <!-- Modal do professor - Header -->
-              <div class="flex justify-end lg:pb-4 lg:border-b-[2px] border-fumaca-dark">
-                <button data-modal-id="modal-professor-001" data-modal-action="close" data-modal-item="button" class="rounded-full hover:bg-gray-200 hover:ring-4 hover:ring-gray-200 transition">
-                  <img src="/dist/images/svg/close.svg" alt="">
+              <!-- Professor 1 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
                 </button>
               </div>
 
-              <!-- Modal do professor - Body -->
-              <div class="grid grid-cols-1 lg:grid-cols-12">
-                <div class="flex justify-center sm:justify-start lg:block lg:col-span-4 py-8 lg:pb-14 lg:pr-10 border-b-[2px] lg:border-b-0 lg:border-r-[2px] border-fumaca-dark">
-                  <div class="hidden sm:block w-28 lg:w-40 h-28 lg:h-40 overflow-hidden rounded-full mr-8 lg:mx-auto mb-4">
+              <!-- Professor 2 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
                     <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
                   </div>
-                  <div>
-                    <div class="mb-8 lg:mb-12 text-center sm:text-start lg:text-center">
-                      <p class="text-dark-1 text-base font-bold">
-                        Nome Sobrenome
-                      </p>
-                      <p class="text-sm break-all">
-                        loremipsum@email.com
-                      </p>
-                    </div>
-                    <div class="flex justify-center sm:justify-start lg:justify-center">
-                      <div class="bg-primary-light bg-opacity-30 inline-block px-6 py-[4px]">
-                        <a href="" class="text-base text-black font-normal hover:underline">
-                          Lattes
-                        </a>
-                      </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+              <!-- Professor 3 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+              <!-- Professor 4 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+              <!-- Professor 5 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+              <!-- Professor 6 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+              <!-- Professor 7 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+              <!-- Professor 8 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+              <!-- Professor 9 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+              <!-- Professor 10 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+              <!-- Professor 11 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+              <!-- Professor 12 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+              <!-- Professor 13 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+              <!-- Professor 14 - card/botão -->
+              <div class="swiper-slide">
+                <button data-modal-id="modal-professor-001" data-modal-action="open" data-modal-item="button" class="w-full bg-primary-gradient-2 p-4 rounded shadow-card-1 hover:shadow-card-2 border-[2px] border-[rgb(7, 7, 8)] border-opacity-80 hover:border-primary-extra-light hover:border-opacity-50 transition">
+                  <div class="w-20 h-20 md:w-28 md:h-28 overflow-hidden rounded-full mx-auto mb-4">
+                    <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                  </div>
+                  <p class="text-dark-1 text-sm sm:text-base font-bold">
+                    Nome Sobrenome
+                  </p>
+                  <p class="text-xs sm:text-sm break-all">
+                    loremipsum@email.com
+                  </p>
+                </button>
+              </div>
+
+            </div>
+            <div id="professores_slider_pagination" class="slider-bullets-dark"></div>
+          </div>
+        </div>
+
+        <!-- Professor 1 - modal (o javascript gerencia a presença classe 'hidden') -->
+        <div id="modal-professor-001" data-modal-item="modal" class="hidden flex items-center sm:px-8 justify-center fixed top-0 left-0 w-screen h-screen bg-dark-2 bg-opacity-20 z-50">
+          <div class="w-full max-w-[910px] bg-white p-6 px-6 lg:px-8 lg:pb-14">
+
+            <!-- Modal do professor - Header -->
+            <div class="flex justify-end lg:pb-4 lg:border-b-[2px] border-fumaca-dark">
+              <button data-modal-id="modal-professor-001" data-modal-action="close" data-modal-item="button" class="rounded-full hover:bg-gray-200 hover:ring-4 hover:ring-gray-200 transition">
+                <img src="/dist/images/svg/close.svg" alt="">
+              </button>
+            </div>
+
+            <!-- Modal do professor - Body -->
+            <div class="grid grid-cols-1 lg:grid-cols-12">
+              <div class="flex justify-center sm:justify-start lg:block lg:col-span-4 py-8 lg:pb-14 lg:pr-10 border-b-[2px] lg:border-b-0 lg:border-r-[2px] border-fumaca-dark">
+                <div class="hidden sm:block w-28 lg:w-40 h-28 lg:h-40 overflow-hidden rounded-full mr-8 lg:mx-auto mb-4">
+                  <img src="https://via.placeholder.com/500x750.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div>
+                  <div class="mb-8 lg:mb-12 text-center sm:text-start lg:text-center">
+                    <p class="text-dark-1 text-base font-bold">
+                      Nome Sobrenome
+                    </p>
+                    <p class="text-sm break-all">
+                      loremipsum@email.com
+                    </p>
+                  </div>
+                  <div class="flex justify-center sm:justify-start lg:justify-center">
+                    <div class="bg-primary-light bg-opacity-30 inline-block px-6 py-[4px]">
+                      <a href="" class="text-base text-black font-normal hover:underline">
+                        Lattes
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div class="lg:col-span-8 pt-8 lg:pl-10 md:grid md:grid-cols-2 gap-8 lg:block">
-                  <div class="mb-10">
-                    <div class="bg-primary-light bg-opacity-30 inline-block px-2 py-[4px] mb-4">
-                      <p class="text-base text-black font-bold">
-                        Formação Profissional
-                      </p>
-                    </div>
-                    <p class="text-dark-2 text-base font-normal">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec justo iaculis, lobortis neque in, tincidunt augue. Pellentesque orci tortor, porta eu eros eu, aliquet porta nibh. Sed in velit enim. Ut vehicula et erat quis scelerisque. Vestibulum viverra elit.
+              </div>
+              <div class="lg:col-span-8 pt-8 lg:pl-10 md:grid md:grid-cols-2 gap-8 lg:block">
+                <div class="mb-10">
+                  <div class="bg-primary-light bg-opacity-30 inline-block px-2 py-[4px] mb-4">
+                    <p class="text-base text-black font-bold">
+                      Formação Profissional
                     </p>
                   </div>
-                  <div class="hidden md:block">
-                    <div class="bg-primary-light bg-opacity-30 inline-block px-2 py-[4px] mb-4">
-                      <p class="text-base text-black font-bold">
-                        Áreas de interesse
-                      </p>
-                    </div>
-                    <ul class="list-disc pl-4 text-dark-2 text-base font-normal">
-                      <li>
-                        Modelagem de Sistemas Biológicos
-                      </li>
-                      <li>
-                        Análise de Dados em Saúde
-                      </li>
-                      <li>
-                        Genômica
-                      </li>
-                      <li>
-                        Metagenômica
-                      </li>
-                      <li>
-                        Genética molecular humana
-                      </li>
-                    </ul>
+                  <p class="text-dark-2 text-base font-normal">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec justo iaculis, lobortis neque in, tincidunt augue. Pellentesque orci tortor, porta eu eros eu, aliquet porta nibh. Sed in velit enim. Ut vehicula et erat quis scelerisque. Vestibulum viverra elit.
+                  </p>
+                </div>
+                <div class="hidden md:block">
+                  <div class="bg-primary-light bg-opacity-30 inline-block px-2 py-[4px] mb-4">
+                    <p class="text-base text-black font-bold">
+                      Áreas de interesse
+                    </p>
                   </div>
+                  <ul class="list-disc pl-4 text-dark-2 text-base font-normal">
+                    <li>
+                      Modelagem de Sistemas Biológicos
+                    </li>
+                    <li>
+                      Análise de Dados em Saúde
+                    </li>
+                    <li>
+                      Genômica
+                    </li>
+                    <li>
+                      Metagenômica
+                    </li>
+                    <li>
+                      Genética molecular humana
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
