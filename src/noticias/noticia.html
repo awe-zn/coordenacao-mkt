@@ -1,10 +1,11 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notícia - Coordenação de marketing</title>
+  <title>Lorem ipsum dolor sit amet, consectetur adipiscing elit - Coordenação de marketing</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,10 +13,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="">
   <header class="bg-dark-1 z-40 sticky top-0">
     <div class="container py-4 flex items-center justify-between">
       <div>
@@ -40,7 +42,7 @@
                 Página inicial
               </a>
             </li>
-            <li class="group isActive w-full lg:w-fit max-w-[228px]">
+            <li class="group w-full lg:w-fit max-w-[228px]">
               <a href="/src/noticias/index.html" class="text-base text-neve-base py-6 lg:py-2 px-3 block transition border-b group-last:border-b-0 border-b-primary-light lg:border-0 lg:border-transparent group-[.isActive]:text-primary-light group-[.isActive]:font-medium hover:opacity-80 group-[.isActive]:hover:opacity-100">
                 Notícias
               </a>
@@ -80,8 +82,217 @@
       </nav>
     </div>
   </header>
-</body>
 
-<script type="module" src="/dist/js/index.js"></script>
+  <!-- Breadcrumb -->
+  <div class="mt-14 lg:mt-28">
+    <div class="container">
+      <nav>
+        <ol class="flex flex-wrap gap-4 items-center">
+          <li class="group">
+            <a href="/src/index.html" class="text-dark-1 text-sm pb-[4px] border-b-[2px] border-transparent group-[.isActive]:border-primary-dark hover:text-primary-dark transition">
+              Inicial
+            </a>
+          </li>
+          <img src="/dist/images/svg/breadcrum-divider.svg" alt="">
+          <li class="group">
+            <a href="/src/noticias/index.html" class="text-dark-1 text-sm pb-[4px] border-b-[2px] border-transparent group-[.isActive]:border-primary-dark hover:text-primary-dark transition">
+              Notícias
+            </a>
+          </li>
+          <img src="/dist/images/svg/breadcrum-divider.svg" alt="">
+          <li class="group isActive" aria-current="page">
+            <a href="/src/noticias/index.html" class="text-dark-1 text-sm pb-[4px] border-b-[2px] border-transparent group-[.isActive]:border-primary-dark hover:text-primary-dark transition">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Seção principal - Sobre o curso -->
+  <main class="bg-white mt-14 lg:mt-16 mb-20 md:mb-32">
+    <div class="container grid grid-cols-12">
+
+      <!-- Título e informações da notícia -->
+      <div class="col-span-12 mb-14">
+        <h1 class="text-2xl lg:text-3.5xl text-dark-2 font-bold mb-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        </h1>
+        <div class="mb-6 text-dark-3 text-base font-normal">
+          <p class="sm:inline-block">
+            Por <strong class="font-medium">Nome Sobrenome</strong>,
+          </p>
+          <p class="sm:inline-block">
+            publicado em 00/00/0000
+          </p>
+        </div>
+        <hr class="border-primary-base border-[2px] w-2/3 sm:w-1/4 md:w-1/5 lg:w-1/6">
+      </div>
+
+      <!-- Tags da notícia -->
+      <div class="col-span-12 mb-28">
+        <div class="">
+          <ul class="flex flex-wrap gap-6">
+            <li class="group">
+              <a href="" class="block text-base text-dark-2 font-normal hover:text-primary-dark group-[.isActive]:font-medium group-[.isActive]:text-primary-dark border-[1px] border-dark-2 hover:border-primary-dark group-[.isActive]:border-primary-dark group-[.isActive]:border-[2px] rounded px-4 py-2 transition">
+                Tag
+              </a>
+            </li>
+            <li class="group">
+              <a href="" class="block text-base text-dark-2 font-normal hover:text-primary-dark group-[.isActive]:font-medium group-[.isActive]:text-primary-dark border-[1px] border-dark-2 hover:border-primary-dark group-[.isActive]:border-primary-dark group-[.isActive]:border-[2px] rounded px-4 py-2 transition">
+                Tag
+              </a>
+            </li>
+            <li class="group">
+              <a href="" class="block text-base text-dark-2 font-normal hover:text-primary-dark group-[.isActive]:font-medium group-[.isActive]:text-primary-dark border-[1px] border-dark-2 hover:border-primary-dark group-[.isActive]:border-primary-dark group-[.isActive]:border-[2px] rounded px-4 py-2 transition">
+                Tag
+              </a>
+            </li>
+            <li class="group">
+              <a href="" class="block text-base text-dark-2 font-normal hover:text-primary-dark group-[.isActive]:font-medium group-[.isActive]:text-primary-dark border-[1px] border-dark-2 hover:border-primary-dark group-[.isActive]:border-primary-dark group-[.isActive]:border-[2px] rounded px-4 py-2 transition">
+                Tag
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Conteúdo da notícia -->
+      <div class="col-span-12 lg:col-span-10 lg:col-start-2 post-content mb-28">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat ex lacus. Pellentesque dignissim augue a libero lobortis imperdiet. Nunc eu finibus tortor, ac placerat augue. In rutrum finibus quam id auctor. Vivamus iaculis dui turpis, at tempor nibh consequat a. Aliquam semper purus nulla, vitae vestibulum nunc tempus vel. Pellentesque posuere tincidunt felis, imperdiet venenatis turpis pretium id. Quisque eget condimentum tellus. In hac habitasse platea dictumst. Pellentesque imperdiet varius ultricies.
+        </p>
+        <p>
+          Mauris tellus odio, condimentum vitae dignissim nec, imperdiet suscipit nulla. Integer sagittis magna id tincidunt ornare. Sed accumsan aliquam nunc, ut sodales tortor suscipit vitae. Donec gravida, nulla et dignissim convallis, eros eros fringilla metus, at sagittis odio purus ac nibh.
+        </p>
+        <figure>
+          <img src="https://via.placeholder.com/1200x500.png" alt="">
+          <figcaption>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat ex lacus.
+          </figcaption>
+        </figure>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat ex lacus. Pellentesque dignissim augue a libero lobortis imperdiet. Nunc eu finibus tortor, ac placerat augue. In rutrum finibus quam id auctor. Vivamus iaculis dui turpis, at tempor nibh consequat a. Aliquam semper purus nulla, vitae vestibulum nunc tempus vel. Pellentesque posuere tincidunt felis, imperdiet venenatis turpis pretium id. Quisque eget condimentum tellus. In hac habitasse platea dictumst. Pellentesque imperdiet varius ultricies. Mauris tellus odio, condimentum vitae dignissim nec, imperdiet suscipit nulla. Integer sagittis magna id tincidunt ornare. Sed accumsan aliquam nunc, ut sodales tortor suscipit vitae. Donec gravida, nulla et dignissim convallis, eros eros fringilla metus, at sagittis odio purus ac nibh.
+        </p>
+        <p>
+          Donec ullamcorper at quam in mattis. Cras semper consectetur lacus, ac tincidunt velit varius nec. Sed vitae faucibus ex. Nullam laoreet nibh ac risus dapibus, sodales mollis metus consectetur. Nullam interdum felis in risus feugiat, quis imperdiet ex maximus. Nullam dolor turpis, efficitur non justo vel, ornare semper arcu. Vestibulum dignissim faucibus viverra. Vestibulum porttitor bibendum molestie.
+        </p>
+      </div>
+
+      <!-- Notícias relacionadas -->
+      <div class="col-span-12 post-content">
+        <h2 class="text-black font-semibold text-2xl mb-12 lg:mb-4">
+          Notícias relacionadas
+        </h2>
+        <div class="w-full grid grid-cols-12 gap-6 xl:gap-x-20">
+          <a href="/src/noticias/noticia.html" class="group block col-span-12 sm:col-span-6 lg:col-span-4 w-full h-full">
+            <div class="relative block overflow-hidden w-full h-2/3 max-h-[300px]">
+              <img class="object-cover h-full w-full group-hover:scale-110 transition" src="https://images.unsplash.com/photo-1500252185289-40ca85eb23a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+              <div class="absolute top-0 left-0 bg-primary-dark p-1 rounded-br">
+                <span class="text-white font-semibold text-sm">
+                  Categoria
+                </span>
+              </div>
+            </div>
+            <p class="text-dark-1 font-semibold text-base mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laboriosam adipisci accusamus et, blanditiis itaque! Earum maxime et quam similique!
+            </p>
+          </a>
+          <a href="/src/noticias/noticia.html" class="group block col-span-12 sm:col-span-6 lg:col-span-4 w-full h-full">
+            <div class="relative block overflow-hidden w-full h-2/3 max-h-[300px]">
+              <img class="object-cover h-full w-full group-hover:scale-110 transition" src="https://via.placeholder.com/900x500.png" alt="">
+              <div class="absolute top-0 left-0 bg-primary-dark p-1 rounded-br">
+                <span class="text-white font-semibold text-sm">
+                  Categoria
+                </span>
+              </div>
+            </div>
+            <p class="text-dark-1 font-semibold text-base mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic inventore delectus
+            </p>
+          </a>
+          <a href="/src/noticias/noticia.html" class="group block col-span-12 sm:col-span-6 lg:col-span-4 w-full h-full">
+            <div class="relative block overflow-hidden w-full h-2/3 max-h-[300px]">
+              <img class="object-cover h-full w-full group-hover:scale-110 transition" src="https://via.placeholder.com/100x500.png" alt="">
+              <div class="absolute top-0 left-0 bg-primary-dark p-1 rounded-br">
+                <span class="text-white font-semibold text-sm">
+                  Categoria
+                </span>
+              </div>
+            </div>
+            <p class="text-dark-1 font-semibold text-base mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic inventore delectus
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="bg-dark-1 py-14 md:py-20">
+      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 md:gap-8">
+        <div class="hidden lg:flex lg:col-span-3 xl:col-span-4 items-center justify-center">
+          <a href="/src/index.html">
+            <img src="/dist/images/logo-lg.png" alt="">
+          </a>
+        </div>
+
+        <!-- Rodapé - Contato -->
+        <div class="space-y-8 lg:col-span-4 xl:col-span-3 lg:col-start-5 xl:col-start-6">
+          <p class="text-primary-light text-2xl font-semibold">
+            Contato
+          </p>
+          <ul class="text-white space-y-4">
+            <li class="">
+              <a href="tel:+5584900000000" class="flex gap-4 hover:underline" target="_blank">
+                <img src="/dist/images/svg/phone.svg" alt="">
+                (84) 90000-0000
+              </a>
+            </li>
+            <li class="">
+              <a href="mailto:loremipsum@gmail.com" class="flex gap-4 hover:underline" target="_blank">
+                <img src="/dist/images/svg/mail.svg" alt="">
+                loremipsum@gmail.com
+              </a>
+            </li>
+            <li class="">
+              <a href="https://goo.gl/maps/aK7qmVfa6KpPe3R86" class="flex gap-4 hover:underline" target="_blank">
+                <img src="/dist/images/svg/location.svg" alt="">
+                R. Brusque, 2926 - Potengi
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Rodapé -  Fique atento -->
+        <div class="space-y-8 lg:col-span-4 xl:col-span-3 xl:col-start-10">
+          <p class="text-primary-light text-2xl font-semibold">
+            Fique atento
+          </p>
+          <div class="space-y-6">
+            <p class="text-white text-base font-normal">
+              Lorem ipsum dolor sit amet adipiscing elit aliquam mauris sed ma
+            </p>
+            <form action="" class="space-y-4">
+              <input type="email" required placeholder="Digite seu E-mail" class="block w-full bg-neve-base rounded px-4 py-2 text-base placeholder:text-dark-4 text-black transition-all focus:outline-none hover:outline hover:outline-[2px] hover:outline-offset-0 hover:outline-primary-extra-light focus:outline focus:outline-[2px] focus:outline-offset-0 focus:outline-primary-base focus:shadow-input">
+              <input type="submit" value="Enviar" class="block text-center py-2 px-8 bg-transparent hover:bg-primary-light hover:bg-opacity-10 border border-primary-light rounded text-white font-semibold text-base transition cursor-pointer">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center bg-dark-1 border-t border-neve-base py-4">
+      <a href="https://agenciaweb.ifrn.edu.br/" target="_blank" title="Agência Web Escolar" class="block">
+        <img src="/dist/images/svg/awe-logo.svg" alt="Logo da agência web escolar">
+      </a>
+    </div>
+  </footer>
+
+  <script type="module" src="/dist/js/index.js"></script>
+
+</body>
 
 </html>

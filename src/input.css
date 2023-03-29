@@ -57,6 +57,22 @@ a {
   @apply bg-primary-base;
 }
 
+.post-content p {
+  @apply text-dark-2 text-base mb-8 leading-[140%] last:mb-0;
+}
+
+.post-content figure {
+  @apply w-full my-14 lg:my-8;
+}
+
+.post-content img {
+  @apply mx-auto max-w-[100%] mb-4;
+}
+
+.post-content figcaption {
+  @apply text-dark-3 text-base;
+}
+
 #projetos_slider_dots {
   @apply flex justify-center gap-4;
 }
