@@ -49,6 +49,11 @@ module.exports = {
       margin: {
         18: '4.5rem',
       },
+      backgroundImage: {
+        'search-default': "url('/dist/images/svg/search.svg')",
+        'search-hover': "url('/dist/images/svg/search-hover.svg')",
+        'search-focus': "url('/dist/images/svg/search-focus.svg')",
+      },
     },
   },
   plugins: [],

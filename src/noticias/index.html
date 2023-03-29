@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias - Coordenação de marketing</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="">
+  <header class="bg-dark-1 z-40 sticky top-0">
+    <div class="container py-4 flex items-center justify-between">
+      <div>
+        <a href="/src/index.html">
+          <img class="hidden sm:block" src="/dist/images/logo.png" alt="">
+          <img class="block sm:hidden" src="/dist/images/logo-sm.png" alt="">
+        </a>
+      </div>
+      <button data-menu="menu" class="lg:hidden w-6 h-6">
+        <img src="/dist/images/svg/menu.svg" alt="">
+      </button>
+      <nav id="menu" class="hidden overflow-y-auto lg:block py-4 md:py-6 lg:py-0 absolute z-40 w-screen lg:w-auto h-screen lg:h-auto top-0 left-0 lg:static bg-dark-2 lg:bg-dark-1">
+        <div class="container">
+          <div class="flex">
+            <button data-menu="menu" class="lg:hidden w-6 h-6 ml-auto">
+              <img src="/dist/images/svg/x-mark.svg" alt="">
+            </button>
+          </div>
+          <ul class="flex flex-col items-center lg:flex-row pt-2 lg:pt-0">
+            <li class="group w-full lg:w-fit max-w-[228px] lg:hidden">
+              <a href="/src/index.html" class="text-base text-neve-base py-6 lg:py-2 px-3 block transition border-b group-last:border-b-0 border-b-primary-light lg:border-0 lg:border-transparent group-[.isActive]:text-primary-light group-[.isActive]:font-medium hover:opacity-80 group-[.isActive]:hover:opacity-100">
+                Página inicial
+              </a>
+            </li>
+            <li class="group isActive w-full lg:w-fit max-w-[228px]">
+              <a href="/src/noticias/index.html" class="text-base text-neve-base py-6 lg:py-2 px-3 block transition border-b group-last:border-b-0 border-b-primary-light lg:border-0 lg:border-transparent group-[.isActive]:text-primary-light group-[.isActive]:font-medium hover:opacity-80 group-[.isActive]:hover:opacity-100">
+                Notícias
+              </a>
+            </li>
+            <li class="group w-full lg:w-fit max-w-[228px]">
+              <a href="/src/index.html#horarios" class="text-base text-neve-base py-6 lg:py-2 px-3 block transition border-b group-last:border-b-0 border-b-primary-light lg:border-0 lg:border-transparent group-[.isActive]:text-primary-light group-[.isActive]:font-medium hover:opacity-80 group-[.isActive]:hover:opacity-100">
+                Horários
+              </a>
+            </li>
+            <li class="group w-full lg:w-fit max-w-[228px]">
+              <a href="/src/sobre.html" class="text-base text-neve-base py-6 lg:py-2 px-3 block transition border-b group-last:border-b-0 border-b-primary-light lg:border-0 lg:border-transparent group-[.isActive]:text-primary-light group-[.isActive]:font-medium hover:opacity-80 group-[.isActive]:hover:opacity-100">
+                O Curso
+              </a>
+            </li>
+            <li class="group w-full lg:w-fit max-w-[228px] lg:hidden">
+              <a href="/src/sobre.html#professores" class="text-base text-neve-base py-6 lg:py-2 px-3 block transition border-b group-last:border-b-0 border-b-primary-light lg:border-0 lg:border-transparent group-[.isActive]:text-primary-light group-[.isActive]:font-medium hover:opacity-80 group-[.isActive]:hover:opacity-100">
+                Professores
+              </a>
+            </li>
+            <li class="group w-full lg:w-fit max-w-[228px] lg:hidden">
+              <a href="/src/index.html#projetos" class="text-base text-neve-base py-6 lg:py-2 px-3 block transition border-b group-last:border-b-0 border-b-primary-light lg:border-0 lg:border-transparent group-[.isActive]:text-primary-light group-[.isActive]:font-medium hover:opacity-80 group-[.isActive]:hover:opacity-100">
+                Projetos
+              </a>
+            </li>
+            <li class="group w-full lg:w-fit max-w-[228px] hidden lg:block">
+              <a href="/src/estrutura-curricular.html" class="text-base text-neve-base py-6 lg:py-2 px-3 block transition border-b group-last:border-b-0 border-b-primary-light lg:border-0 lg:border-transparent group-[.isActive]:text-primary-light group-[.isActive]:font-medium hover:opacity-80 group-[.isActive]:hover:opacity-100">
+                Estrutura curricular
+              </a>
+            </li>
+            <li class="group w-full lg:w-fit max-w-[228px]">
+              <a href="/src/tutoriais.html" class="text-base text-neve-base py-6 lg:py-2 px-3 block transition border-b group-last:border-b-0 border-b-primary-light lg:border-0 lg:border-transparent group-[.isActive]:text-primary-light group-[.isActive]:font-medium hover:opacity-80 group-[.isActive]:hover:opacity-100">
+                Tutoriais
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="mt-14 lg:mt-28">
+    <div class="container">
+      <nav>
+        <ol class="flex gap-4 items-center">
+          <li class="group">
+            <a href="/src/index.html" class="text-dark-1 text-sm pb-[4px] border-b-[2px] border-transparent group-[.isActive]:border-primary-dark hover:text-primary-dark transition">
+              Inicial
+            </a>
+          </li>
+          <img src="/dist/images/svg/breadcrum-divider.svg" alt="">
+          <li class="group isActive" aria-current="page">
+            <a href="/src/noticias/index.html" class="text-dark-1 text-sm pb-[4px] border-b-[2px] border-transparent group-[.isActive]:border-primary-dark hover:text-primary-dark transition">
+              Notícias
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Seção principal - Sobre o curso -->
+  <main class="bg-white mt-14 lg:mt-16 mb-20 md:mb-32">
+    <div class="container grid grid-cols-12">
+
+      <div class="col-span-12 mb-14">
+        <div class="pb-2 md:pb-4 border-b-[4px] border-primary-base inline-block pr-4 md:pr-8">
+          <h2 class="text-2xl lg:text-3.5xl text-dark-2 font-bold">
+            Notícias
+          </h2>
+        </div>
+      </div>
+
+      <!-- filtros -->
+      <div class="col-span-12 lg:col-span-8 mb-10 lg:mb-28">
+        <p class="text-2xl text-black font-semibold mb-4">
+          Filtro
+        </p>
+        <div class="">
+          <ul class="flex flex-wrap gap-6">
+            <li class="group isActive">
+              <a href="" class="block text-base text-dark-2 font-normal hover:text-primary-dark group-[.isActive]:font-medium group-[.isActive]:text-primary-dark border-[1px] border-dark-2 hover:border-primary-dark group-[.isActive]:border-primary-dark group-[.isActive]:border-[2px] rounded px-4 py-2 transition">
+                Tag
+              </a>
+            </li>
+            <li class="group">
+              <a href="" class="block text-base text-dark-2 font-normal hover:text-primary-dark group-[.isActive]:font-medium group-[.isActive]:text-primary-dark border-[1px] border-dark-2 hover:border-primary-dark group-[.isActive]:border-primary-dark group-[.isActive]:border-[2px] rounded px-4 py-2 transition">
+                Tag
+              </a>
+            </li>
+            <li class="group">
+              <a href="" class="block text-base text-dark-2 font-normal hover:text-primary-dark group-[.isActive]:font-medium group-[.isActive]:text-primary-dark border-[1px] border-dark-2 hover:border-primary-dark group-[.isActive]:border-primary-dark group-[.isActive]:border-[2px] rounded px-4 py-2 transition">
+                Tag
+              </a>
+            </li>
+            <li class="group">
+              <a href="" class="block text-base text-dark-2 font-normal hover:text-primary-dark group-[.isActive]:font-medium group-[.isActive]:text-primary-dark border-[1px] border-dark-2 hover:border-primary-dark group-[.isActive]:border-primary-dark group-[.isActive]:border-[2px] rounded px-4 py-2 transition">
+                Tag
+              </a>
+            </li>
+            <li class="group">
+              <a href="" class="block text-base text-dark-2 font-normal hover:text-primary-dark group-[.isActive]:font-medium group-[.isActive]:text-primary-dark border-[1px] border-dark-2 hover:border-primary-dark group-[.isActive]:border-primary-dark group-[.isActive]:border-[2px] rounded px-4 py-2 transition">
+                Tag
+              </a>
+            </li>
+            <li class="group">
+              <a href="" class="block text-base text-dark-2 font-normal hover:text-primary-dark group-[.isActive]:font-medium group-[.isActive]:text-primary-dark border-[1px] border-dark-2 hover:border-primary-dark group-[.isActive]:border-primary-dark group-[.isActive]:border-[2px] rounded px-4 py-2 transition">
+                Tag
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- barra de pesquisa -->
+      <div class="col-span-12 lg:col-span-4 flex items-end mb-28">
+        <input type="text" class="text-base block w-full p-2 pl-4 pr-10 rounded bg-search-default bg-[center_right_16px] hover:bg-search-hover focus:bg-search-focus bg-no-repeat placeholder:text-dark-5 text-dark-2 bg-neve-base border border-dark-5 hover:border-dark-2 focus:border-primary-base focus:outline-[1px] focus:outline-offset-0 focus:outline-primary-base transition-all" placeholder="Sua pesquisa">
+      </div>
+
+      <!-- grid de notícias -->
+      <div class="col-span-12 grid gap-x-6 gap-y-12 grid-cols-12 mb-16">
+        <a href="/src/noticias/index.html" class="group block col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 w-full h-full">
+          <div class="relative block overflow-hidden h-2/3 max-h-[300px] lg:max-h-[185px] xl:max-h-[176px]">
+            <img class="object-cover h-full w-full group-hover:scale-110 transition" src="https://images.unsplash.com/photo-1500252185289-40ca85eb23a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+            <div class="absolute top-0 left-0 bg-primary-dark p-1 rounded-br">
+              <span class="text-white font-semibold text-sm">
+                Categoria
+              </span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-dark-1 font-semibold text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic inventore delectus
+            </p>
+            <p class="text-sm md:text-base font-light text-dark-2">
+              00.00.0000
+            </p>
+          </div>
+        </a>
+        <a href="/src/noticias/index.html" class="group block col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 w-full h-full">
+          <div class="relative block overflow-hidden h-2/3 max-h-[300px] lg:max-h-[185px] xl:max-h-[176px]">
+            <img class="object-cover h-full w-full group-hover:scale-110 transition" src="https://images.unsplash.com/photo-1500252185289-40ca85eb23a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+            <div class="absolute top-0 left-0 bg-primary-dark p-1 rounded-br">
+              <span class="text-white font-semibold text-sm">
+                Categoria
+              </span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-dark-1 font-semibold text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic inventore delectus
+            </p>
+            <p class="text-sm md:text-base font-light text-dark-2">
+              00.00.0000
+            </p>
+          </div>
+        </a>
+        <a href="/src/noticias/index.html" class="group block col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 w-full h-full">
+          <div class="relative block overflow-hidden h-2/3 max-h-[300px] lg:max-h-[185px] xl:max-h-[176px]">
+            <img class="object-cover h-full w-full group-hover:scale-110 transition" src="https://images.unsplash.com/photo-1500252185289-40ca85eb23a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+            <div class="absolute top-0 left-0 bg-primary-dark p-1 rounded-br">
+              <span class="text-white font-semibold text-sm">
+                Categoria
+              </span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-dark-1 font-semibold text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic inventore delectus
+            </p>
+            <p class="text-sm md:text-base font-light text-dark-2">
+              00.00.0000
+            </p>
+          </div>
+        </a>
+        <a href="/src/noticias/index.html" class="group block col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 w-full h-full">
+          <div class="relative block overflow-hidden h-2/3 max-h-[300px] lg:max-h-[185px] xl:max-h-[176px]">
+            <img class="object-cover h-full w-full group-hover:scale-110 transition" src="https://images.unsplash.com/photo-1500252185289-40ca85eb23a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+            <div class="absolute top-0 left-0 bg-primary-dark p-1 rounded-br">
+              <span class="text-white font-semibold text-sm">
+                Categoria
+              </span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-dark-1 font-semibold text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic inventore delectus
+            </p>
+            <p class="text-sm md:text-base font-light text-dark-2">
+              00.00.0000
+            </p>
+          </div>
+        </a>
+        <a href="/src/noticias/index.html" class="group block col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 w-full h-full">
+          <div class="relative block overflow-hidden h-2/3 max-h-[300px] lg:max-h-[185px] xl:max-h-[176px]">
+            <img class="object-cover h-full w-full group-hover:scale-110 transition" src="https://images.unsplash.com/photo-1500252185289-40ca85eb23a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+            <div class="absolute top-0 left-0 bg-primary-dark p-1 rounded-br">
+              <span class="text-white font-semibold text-sm">
+                Categoria
+              </span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-dark-1 font-semibold text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic inventore delectus
+            </p>
+            <p class="text-sm md:text-base font-light text-dark-2">
+              00.00.0000
+            </p>
+          </div>
+        </a>
+        <a href="/src/noticias/index.html" class="group block col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 w-full h-full">
+          <div class="relative block overflow-hidden h-2/3 max-h-[300px] lg:max-h-[185px] xl:max-h-[176px]">
+            <img class="object-cover h-full w-full group-hover:scale-110 transition" src="https://images.unsplash.com/photo-1500252185289-40ca85eb23a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+            <div class="absolute top-0 left-0 bg-primary-dark p-1 rounded-br">
+              <span class="text-white font-semibold text-sm">
+                Categoria
+              </span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-dark-1 font-semibold text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic inventore delectus
+            </p>
+            <p class="text-sm md:text-base font-light text-dark-2">
+              00.00.0000
+            </p>
+          </div>
+        </a>
+        <a href="/src/noticias/index.html" class="group block col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 w-full h-full">
+          <div class="relative block overflow-hidden h-2/3 max-h-[300px] lg:max-h-[185px] xl:max-h-[176px]">
+            <img class="object-cover h-full w-full group-hover:scale-110 transition" src="https://images.unsplash.com/photo-1500252185289-40ca85eb23a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+            <div class="absolute top-0 left-0 bg-primary-dark p-1 rounded-br">
+              <span class="text-white font-semibold text-sm">
+                Categoria
+              </span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-dark-1 font-semibold text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic inventore delectus
+            </p>
+            <p class="text-sm md:text-base font-light text-dark-2">
+              00.00.0000
+            </p>
+          </div>
+        </a>
+        <a href="/src/noticias/index.html" class="group block col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 w-full h-full">
+          <div class="relative block overflow-hidden h-2/3 max-h-[300px] lg:max-h-[185px] xl:max-h-[176px]">
+            <img class="object-cover h-full w-full group-hover:scale-110 transition" src="https://images.unsplash.com/photo-1500252185289-40ca85eb23a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+            <div class="absolute top-0 left-0 bg-primary-dark p-1 rounded-br">
+              <span class="text-white font-semibold text-sm">
+                Categoria
+              </span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-dark-1 font-semibold text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic inventore delectus
+            </p>
+            <p class="text-sm md:text-base font-light text-dark-2">
+              00.00.0000
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Paginaçaõ de notícias -->
+      <div class="col-span-12 flex items-center justify-center">
+        <nav aria-label="Paginação de notícias">
+          <ul class="flex gap-x-1 text-3.5xl md:text-base font-normal">
+            <li class="group isSelected">
+              <a class="group-[.isSelected]:text-primary-dark group-[.isSelected]:font-semibold p-3" href="#">1</a>
+            </li>
+            <li class="group">
+              <a class="group-[.isSelected]:text-primary-dark group-[.isSelected]:font-semibold p-3" href="#">2</a>
+            </li>
+            <li class="group">
+              <a class="group-[.isSelected]:text-primary-dark group-[.isSelected]:font-semibold p-3" href="#">3</a>
+            </li>
+            <li class="group">
+              ...
+            </li>
+            <li class="group">
+              <a class="group-[.isSelected]:text-primary-dark group-[.isSelected]:font-semibold p-3" href="#">10</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="bg-dark-1 py-14 md:py-20">
+      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 md:gap-8">
+        <div class="hidden lg:flex lg:col-span-3 xl:col-span-4 items-center justify-center">
+          <a href="/src/index.html">
+            <img src="/dist/images/logo-lg.png" alt="">
+          </a>
+        </div>
+
+        <!-- Rodapé - Contato -->
+        <div class="space-y-8 lg:col-span-4 xl:col-span-3 lg:col-start-5 xl:col-start-6">
+          <p class="text-primary-light text-2xl font-semibold">
+            Contato
+          </p>
+          <ul class="text-white space-y-4">
+            <li class="">
+              <a href="tel:+5584900000000" class="flex gap-4 hover:underline" target="_blank">
+                <img src="/dist/images/svg/phone.svg" alt="">
+                (84) 90000-0000
+              </a>
+            </li>
+            <li class="">
+              <a href="mailto:loremipsum@gmail.com" class="flex gap-4 hover:underline" target="_blank">
+                <img src="/dist/images/svg/mail.svg" alt="">
+                loremipsum@gmail.com
+              </a>
+            </li>
+            <li class="">
+              <a href="https://goo.gl/maps/aK7qmVfa6KpPe3R86" class="flex gap-4 hover:underline" target="_blank">
+                <img src="/dist/images/svg/location.svg" alt="">
+                R. Brusque, 2926 - Potengi
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Rodapé -  Fique atento -->
+        <div class="space-y-8 lg:col-span-4 xl:col-span-3 xl:col-start-10">
+          <p class="text-primary-light text-2xl font-semibold">
+            Fique atento
+          </p>
+          <div class="space-y-6">
+            <p class="text-white text-base font-normal">
+              Lorem ipsum dolor sit amet adipiscing elit aliquam mauris sed ma
+            </p>
+            <form action="" class="space-y-4">
+              <input type="email" required placeholder="Digite seu E-mail" class="block w-full bg-neve-base rounded px-4 py-2 text-base placeholder:text-dark-4 text-black transition-all focus:outline-none hover:outline hover:outline-[2px] hover:outline-offset-0 hover:outline-primary-extra-light focus:outline focus:outline-[2px] focus:outline-offset-0 focus:outline-primary-base focus:shadow-input">
+              <input type="submit" value="Enviar" class="block text-center py-2 px-8 bg-transparent hover:bg-primary-light hover:bg-opacity-10 border border-primary-light rounded text-white font-semibold text-base transition cursor-pointer">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center bg-dark-1 border-t border-neve-base py-4">
+      <a href="https://agenciaweb.ifrn.edu.br/" target="_blank" title="Agência Web Escolar" class="block">
+        <img src="/dist/images/svg/awe-logo.svg" alt="Logo da agência web escolar">
+      </a>
+    </div>
+  </footer>
+
+  <script type="module" src="/dist/js/index.js"></script>
+
+</body>
+
+</html>
