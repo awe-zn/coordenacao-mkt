@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '/dist/owl.carousel.min.css';
-@import '/dist/owl.theme.default.min.css';
+@import "/dist/owl.carousel.min.css";
+@import "/dist/owl.theme.default.min.css";
 
 :root,
 body,
 * {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .bg-primary-gradient {
@@ -95,4 +95,16 @@ a {
 
 #testimonials_slider_dots .owl-dot.active {
   @apply bg-primary-base;
+}
+
+.search_form {
+  @apply relative;
+}
+
+.search_form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 30;
+  padding: 8px;
 }
